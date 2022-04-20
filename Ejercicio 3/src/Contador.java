@@ -15,9 +15,9 @@ public class Contador implements Runnable{
         ciclos = 0;
         try{
             while (true){
+                Thread.sleep(1000);
                 ciclos++;
                 System.out.println("La señora indicará la hora: "+ ciclos);
-                Thread.sleep(1000);
                 sem.release(cantHijos);
             }
 
