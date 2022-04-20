@@ -16,6 +16,7 @@ public class Hijos implements Runnable{
                 sem.acquire();
                 System.out.println("Hilo "+id+" recibio de la Señora e indicará la hora: "+ Contador.ciclos);
                 Thread.sleep(10);
+
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
